@@ -12,6 +12,6 @@ node('linux') {
         echo 'Hello Deploy!'
     }
     stage('Report') {
-        cleanWs
+        cleanWs()
     }
 }
