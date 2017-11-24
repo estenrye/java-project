@@ -10,6 +10,7 @@ node('linux') {
     }
     stage('Deploy') {
         sh 'ls /workspace/java-pipeline/dist'
+        sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-*.jar s3://jenkins-stack-s3bucket-6hp6znouxyxn.s3.amazonaws.com'
     }
     stage('Report') {
         cleanWs()
