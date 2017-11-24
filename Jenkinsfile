@@ -17,7 +17,7 @@ pipeline {
         },
         stage('Report') {
             steps {
-                echo 'Hello Report'
+                echo 'Hello Report!'
             }
         }
     }
