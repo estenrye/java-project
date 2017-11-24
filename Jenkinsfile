@@ -7,7 +7,7 @@ node('linux') {
         echo 'Hello Build'
     }
     stage('Deploy') {
-        echo 'Hello Deploy'
+        echo 'Hello Deploy!'
     }
     stage('Report') {
         echo 'Hello Report!'
