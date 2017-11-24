@@ -4,7 +4,7 @@ node('linux') {
         echo 'Hello Unit Tests'
     }
     stage('Build') {
-        echo 'Hello Build'
+        echo 'Hello Build!'
     }
     stage('Deploy') {
         echo 'Hello Deploy!'
