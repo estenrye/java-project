@@ -9,7 +9,7 @@ node('linux') {
         sh 'ant -f build.xml -v'
     }
     stage('Deploy') {
-        echo 'Hello Deploy!'
+        sh 'ls /workspace/java-pipeline/dist'
     }
     stage('Report') {
         cleanWs()
