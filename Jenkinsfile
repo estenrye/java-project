@@ -13,6 +13,7 @@ node('linux') {
         sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-*.jar s3://jenkins-stack-s3bucket-6hp6znouxyxn'
     }
     stage('Report') {
+        sh 'aws cloudformation describe-stack-resources --region us-east-1 --stack-name jenkins'
         cleanWs()
     }
 }
